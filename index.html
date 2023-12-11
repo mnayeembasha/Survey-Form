@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for showing your intrest in filling this form</p>
+    </header>
+
+    <main class="container">
+        <form action="#" id="survey-form">
+
+            <!-- First Fieldset -->
+
+                <div class="form-control">
+                    <label id="name-label" for="name">Name
+                        <input type="text" id="name" name="name" placeholder=" &nbsp;Enter your name"></label>
+                </div>
+                <div class="form-control">
+                    <label id="email-label" for="email">Email
+                    <input type="email" id="email" name="email" placeholder=" &nbsp;Enter your Email"></label>
+                </div>
+                <div class="form-control">
+                    <label id="number-label" for="number">Age <span class="small-text">(optional)</span>
+                    <input type="number" id="number" name="number" min="18" max="60" placeholder=" &nbsp;Enter your Age"></label>
+                </div>
+
+                <!-- Second Fieldset -->
+
+                <div class="form-control">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="" disabled selected hidden class="selected"> &nbsp;&nbsp;Select current role</option>
+                        <option value="2">Student</option>
+                        <option value="3">Full Time Job</option>
+                        <option value="4">Full Time Learner</option>
+                        <option value="5">Prefer not to say</option>
+                        <option value="6">Other</option>
+                    </select>
+                </div>
+                <div class="check-radio">
+                    <p>Would you recommend Our Company Services to a friend?</p>
+                    <div><input type="radio" name="recommend" id="definitely" value="1"> <label for="definitely">Definitely</label></div>
+                    <div> <input type="radio" name="recommend" id="maybe" value="2"> <label for="maybe">Maybe</label></div>
+                    <div><input type="radio" name="recommend" id="notsure" value="3"> <label for="notsure">Not sure</label></div>
+                </div>
+                <div class="form-control">
+                    <label for="">What is your favorite feature of this Platform?</label>
+                    <select name="fav-feature" id="fav-feature">
+                        <option value="" disabled selected hidden>Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>
+                    </select>
+                </div>
+
+                <!-- Third Fieldset -->
+
+                <div class="check-radio">
+                    <p>What would you like to see improved? <span class="small-text">(Check all that apply)</span></p>
+                        <div><input type="checkbox" id="checkbox1" value="1"> <label for="checkbox1">Front-end Projects</label></div>
+                        <div><input type="checkbox" id="checkbox2" value="2"> <label for="checkbox2">Back-end Projects</label></div>
+                        <div><input type="checkbox" id="checkbox3" value="3"> <label for="checkbox3">Data Visualization</label></div>
+                        <div><input type="checkbox" id="checkbox4" value="4"> <label for="checkbox4">Challenges</label></div>
+                        <div><input type="checkbox" id="checkbox5" value="5"> <label for="checkbox5">Open Source Community</label></div>
+                        <div><input type="checkbox" id="checkbox6" value="6"> <label for="checkbox6">Gitter help rooms</label></div>
+                        <div><input type="checkbox" id="checkbox7" value="7"> <label for="checkbox7">Videos</label></div>
+                        <div><input type="checkbox" id="checkbox8" value="8"> <label for="checkbox8">City Meetups</label></div>
+                        <div><input type="checkbox" id="checkbox9" value="9"> <label for="checkbox9">Wiki</label></div>
+                        <div><input type="checkbox" id="checkbox10" value="10"> <label for="checkbox10">Forum</label></div>
+                        <div><input type="checkbox" id="checkbox11" value="11"> <label for="checkbox11">Additional Courses</label></div>
+
+                </div>
+                <div class="form-control">
+                    <label for="comments">Any Comments or Suggestions?
+
+                    </label>
+                        <textarea name="comments" id="comments" cols="100" rows="5" placeholder=" &nbsp;Enter your comments here..."></textarea>
+                </div>
+                <div class="form-control">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+        </form>
+    </main>
+</body>
+</html>
