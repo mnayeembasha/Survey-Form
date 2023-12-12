@@ -143,3 +143,21 @@ select option{
         padding: 5px; /* Adjust padding for better spacing */
     }
 }
+
+/* Adjust the form container width for Vivo T1 5G */
+@media only screen and (max-width: 164px) and (max-height: 75.8px) {
+    .container {
+        width: 75%; /* Adjust the width percentage as needed */
+        max-width: 150px; /* Set a maximum width to fit within the mobile dimensions */
+    }
+
+    /* Additional adjustments for input elements */
+    .form-control input,
+    .form-control textarea,
+    .form-control select {
+        width: 100%; /* Make inputs and selects full-width */
+        font-size: 14px; /* Adjust font size for better visibility */
+        padding: 5px; /* Adjust padding for better spacing */
+    }
+}
+
