@@ -116,3 +116,30 @@ select option{
 #submit:hover{
     box-shadow:0 0 40px 10px  rgb(54, 96, 112);
 }
+
+/*Responsiveness*/
+@media only screen and (max-width: 600px) {
+    /* Add styles for small screens */
+    .form-control input,
+    .form-control textarea,
+    .form-control select {
+        width: 100%; /* Make inputs and selects full-width */
+    }
+}
+
+/* Adjust the form container width for iPhone 14 Pro Max */
+@media only screen and (max-width: 430px) and (max-height: 932px) {
+    .container {
+        width: 75%; /* Adjust the width percentage as needed */
+        max-width: 400px; /* Set a maximum width to avoid stretching on larger screens */
+    }
+
+    /* Additional adjustments for input elements if necessary */
+    .form-control input,
+    .form-control textarea,
+    .form-control select {
+        width: 100%; /* Make inputs and selects full-width */
+        font-size: 16px; /* Adjust font size for better visibility */
+        padding: 5px; /* Adjust padding for better spacing */
+    }
+}
