@@ -182,15 +182,15 @@ textarea:focus {
      */
   h1,
   #description {
-    width: 90%;
+    width: 50%;
   }
   .container {
-    width: 90%;
+    width: 85%;
     padding: 2rem;
   }
   .container .form-control input,
-  select {
-    height: 7.5vh;
+  .container .form-control select {
+    height: 7vh;
   }
   input[type="checkbox"],
   input[type="radio"] {
