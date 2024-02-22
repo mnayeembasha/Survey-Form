@@ -19,9 +19,9 @@ body {
 header {
   margin: 2vh auto;
   text-align: center;
-  width:100%;
+  width: 100%;
 }
-h1{
+h1 {
   font-size: 3rem;
   font-family: "Fira Sans", sans-serif;
   width: 100%;
@@ -60,11 +60,11 @@ h1{
   padding: 0.1rem 0rem 0.1rem 0.5rem;
   border-radius: 0.5rem;
 }
-.container .form-control input{
-  padding:1.5rem 1rem;
+.container .form-control input {
+  padding: 1.5rem 1rem;
 }
-.container .form-control select{
-  height:7vh;
+.container .form-control select {
+  height: 7vh;
 }
 .container label,
 .checkbox-text {
@@ -74,7 +74,7 @@ h1{
 input::placeholder,
 textarea::placeholder {
   position: relative;
-  right:0.5rem;
+  right: 0.5rem;
   font-size: 1rem;
 }
 
@@ -160,39 +160,39 @@ textarea {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   text-align: center;
-  width:100%;
-  background-color:green;
+  width: 100%;
+  background-color: green;
   border: none;
-  padding:0.3rem 0.5rem;
-  color:white;
+  padding: 0.3rem 0.5rem;
+  color: white;
   font-weight: bold;
   border-radius: 1rem;
 }
 #submit:hover {
   /* box-shadow:0 0 40px 10px  rgb(65, 114, 73); */
   background-color: rgb(12, 85, 12);
-  color:rgb(140, 145, 150);
+  color: rgb(140, 145, 150);
 }
 
 /*Styling the footer*/
-footer{
+footer {
   margin-top: 2rem;
-  width:100%;
-  height:15vh;
+  width: 100%;
+  height: 15vh;
   background-color: rgb(2, 92, 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer-text{
-  color:rgb(208, 204, 204);
+.footer-text {
+  color: rgb(208, 204, 204);
 }
-.company-name{
-  font-size:1.5rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.company-name {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   cursor: pointer;
-  color:grey;
+  color: grey;
 }
 /*Responsiveness*/
 @media only screen and (max-width: 900px) and (min-width: 501px) {
@@ -201,7 +201,6 @@ footer{
   }
 }
 @media only screen and (max-width: 500px) {
-
   h1 {
     width: 100%;
   }
@@ -209,33 +208,33 @@ footer{
     width: 90%;
     padding: 2rem;
   }
-  .container .form-control input{
+  .container .form-control input {
     height: 6vh;
   }
-  .container .form-control select{
-    height:6.5vh;
+  .container .form-control select {
+    height: 6.5vh;
   }
   input[type="checkbox"],
   input[type="radio"] {
     height: initial;
   }
-  footer{
-    height:13vh;
+  footer {
+    height: 13vh;
   }
 }
 
-@media only screen and (max-width:354px){
-  footer{
-    height:15vh;
+@media only screen and (max-width: 354px) {
+  footer {
+    height: 15vh;
     font-size: 1rem;
     position: relative;
-    bottom:0px;
+    bottom: 0px;
   }
-  input[type="checkbox"]+label{
+  input[type="checkbox"] + label {
     font-size: 1rem;
   }
-  footer .footer-text{
-    width:100%;
+  footer .footer-text {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
