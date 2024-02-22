@@ -179,7 +179,7 @@ footer{
   margin-top: 2rem;
   width:100%;
   height:15vh;
-  background-color: rgb(27, 85, 27);
+  background-color: rgb(2, 92, 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,11 +213,14 @@ footer{
     height: 6vh;
   }
   .container .form-control select{
-    height:7vh;
+    height:6.5vh;
   }
   input[type="checkbox"],
   input[type="radio"] {
     height: initial;
+  }
+  footer{
+    height:13vh;
   }
 }
 
