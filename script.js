@@ -19,11 +19,12 @@ function generatePara(innerTxt) {
 }
 
 let nameErrorMsg = generatePara(
-  "username should contain alpha-numeric characters only!"
+  "Name should contain alpha-numeric characters only!"
 );
 function validateName() {
   let nameVal = document.querySelector("#name").value;
-  let regex = /^([A-Za-z0-9]+)$/;
+  //let regex = /^([A-Za-z0-9]+)$/;
+  let regex = /^(?=.*[A-Za-z0-9])[\w\s]+$/;
   if (!regex.test(nameVal)) {
     name.style.border = "4px solid red";
     name.parentElement.parentElement.appendChild(nameErrorMsg);
